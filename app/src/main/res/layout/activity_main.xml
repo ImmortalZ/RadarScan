@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lkd"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <mr_immortalz.com.modelqq.custom.RadarViewGroup
+        android:id="@+id/radar"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <mr_immortalz.com.modelqq.custom.RadarView
+            android:id="@id/id_scan_circle"
+            android:layout_width="280dp"
+            android:layout_height="280dp"/>
+    </mr_immortalz.com.modelqq.custom.RadarViewGroup>
+
+    <RelativeLayout
+        android:id="@+id/ry_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:clipChildren="false">
+
+        <mr_immortalz.com.modelqq.custom.CustomViewPager
+            android:id="@+id/vp"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
